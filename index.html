@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Portfolio | Jimmuel John Tadiosa</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background: url("https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff; 
+    }
+
+   
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5); 
+      z-index: -1;
+    }
+
+    .navbar {
+      padding: 0.8rem 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+      background: rgba(255,255,255,0.9); 
+      color: #000;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      font-weight: 700;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+      color: #fff;
+    }
+
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 3px;
+      background: #0d6efd;
+      margin-top: 0.5rem;
+      border-radius: 2px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.85);
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">WEB PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link active" href="#header">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#awards">Others</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section id="header" class="min-vh-100 d-flex align-items-center">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center">
+        <div class="col-md-4 mb-4 mb-md-0 text-center">
+          <img src="./JMpic.jpg" alt="Profile Picture" class="img-fluid rounded-circle shadow" width="200" height="200">
+        </div>
+        <div class="col-md-8">
+          <h1 class="fw-bold">Jimmuel John Tadiosa</h1>
+          <h3 class="text-light">Aspiring Web Developer</h3>
+          <p class="mt-3">
+            Hi! I’m Jimmuel John Tadiosa, an aspiring web developer passionate about technology and design. 
+            I enjoy building responsive websites, exploring new tools, and solving real-world problems through code.
+          </p>
+            <button class="btn btn-dark mt-2" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#documentsCollapse" aria-expanded="false" 
+                  aria-controls="documentsCollapse">
+            View Resume & Application Letter
+          </button>
+
+          <div class="collapse mt-3" id="documentsCollapse">
+            <div class="card card-body bg-light">
+              <a href="./resume.jm.jpg" class="btn btn-primary mb-2" target="_blank">Download Resume</a>
+              <a href="./application letter jm.docx" class="btn btn-outline-primary" target="_blank">View Application Letter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="about" class="py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="section-title mb-4 text-center text-light">About Me</h2>
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8">
+        <div class="card p-4 bg-secondary text-light border-0 shadow-lg">
+          <p class="mb-0">
+            I'm <strong>Jimmuel John A. Tadiosa</strong>, an aspiring <strong>Front-End Web Developer</strong>. 
+            I'm 20 years old, from <strong>Barangay Isabang, Tayabas City, Quezon</strong>, and currently a student at 
+            <strong>Colleges of Sciences Technology and Communication Inc.</strong> 
+            I'm excited to keep learning and refining my skills, and I look forward to growing with the 
+            <strong>right company</strong> in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="fw-bold text-center mb-4">Preferred Skills</h2>
+        <ul class="list-group list-group-flush shadow-lg rounded overflow-hidden">
+          <li class="list-group-item bg-secondary text-light"> Web Development (HTML, CSS, JavaScript, Bootstrap)</li>
+          <li class="list-group-item bg-secondary text-light"> Programming (VB.NET, Java, C++, C#)</li>
+          <li class="list-group-item bg-secondary text-light"> Database Management (MySQL, OracleDB)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="py-5" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+  <div class="container">
+    <h2 class="text-center text-white mb-5">Education</h2>
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 p-4 h-100">
+          <h4 class="text-primary"> College</h4>
+          <p><strong>School:</strong> College of Sciences, Technology, and Communications, Inc.</p>
+          <p><strong>Course:</strong> BS in Information Technology</p>
+          <p><strong>Status:</strong> Ongoing</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 p-4 h-100">
+          <h4 class="text-success"> Senior High School</h4>
+          <p><strong>School:</strong> Pagbilao National High School</p>
+          <p><strong>Track:</strong> HUMSS</p>
+          <p><strong>Year Graduated:</strong> 2023</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 p-4 h-100">
+          <h4 class="text-info"> Junior High School</h4>
+          <p><strong>School:</strong> Pagbilao National High School</p>
+          <p><strong>Year Graduated:</strong> 2021</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="awards" class="py-5" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
+  <div class="container">
+    <h2 class="section-title text-center text-white mb-5">Excellence & Awards</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card shadow-lg border-0 h-100 p-4">
+          <h4 class="text-primary mb-3"> Academic Awards</h4>
+          <ul class="list-unstyled mb-0">
+            <li> With Honors – SHS (2023)</li>
+            <li> Achiever – Grade 10 (2021)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-lg border-0 h-100 p-4">
+          <h4 class="text-success mb-3"> Non-Academic Awards</h4>
+          <ul class="list-unstyled mb-0">
+            <li> Champion – Inter-Barangay Mobile Legends Tournament</li>
+            <li> Champion – Inter-Barangay Basketball League</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  <footer class="text-white py-4">
+    <div class="container text-center">
+      <h5>Contact Me</h5>
+      <p><strong>Phone:</strong> +63 965 066 1879</p>
+      <p><strong>Email:</strong> jimmueljohn36@gmail.com</p>
+      <hr class="border-light">
+      <p class="mb-0">&copy; 2025 Jimmuel John Tadiosa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
